@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BlueBackground.jpg" />
+    <None Remove="Circle.png" />
+    <None Remove="Dragon.jpg" />
+    <None Remove="FilledRedCircle.png" />
+    <None Remove="pastel.jpg" />
+    <None Remove="Rectangle.png" />
+    <None Remove="RedCircle.png" />
+    <None Remove="RedDragon.png" />
+    <None Remove="SkyBlue.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Circle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FilledRedCircle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rectangle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RedCircle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RedDragon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Dragon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pastel.jpg" />
+    <Resource Include="BlueBackground.jpg" />
+    <Resource Include="SkyBlue.jpg" />
+  </ItemGroup>
+
+</Project>

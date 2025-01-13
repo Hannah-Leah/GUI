@@ -1,0 +1,28 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFFFDCDC">
+    <Grid x:Name="textblock_Hello">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="190,185,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="519,195,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="50"/>
+        <TextBlock x:Name="textbook_hello" HorizontalAlignment="Left" Margin="331,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="19" Cursor="Help" Foreground="#FF9E1D1D">
+            <TextBlock.Effect>
+                <BlurEffect/>
+            </TextBlock.Effect>
+            <TextBlock.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF6D2727"/>
+                    <GradientStop Color="#FF834848"/>
+                </LinearGradientBrush>
+            </TextBlock.OpacityMask><Run Language="en-gb" Text="HELLLLLLLOOO"/></TextBlock>
+        <TextBox x:Name="tbx_userInput" HorizontalAlignment="Left" Margin="331,71,0,0" TextWrapping="Wrap" Text="Input" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Grid/>
+
+    </Grid>
+</Window>

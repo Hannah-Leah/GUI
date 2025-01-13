@@ -1,0 +1,57 @@
+﻿<Window x:Class="CanvasPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CanvasPractice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Canvas Background="Bisque">
+            <!--RGB -->
+            <Rectangle Stroke="black" StrokeThickness="10" Fill="red" Height="200" Width="200" Canvas.Left="10" Canvas.Top="10"></Rectangle>
+            <Rectangle Fill="green" Stroke="black" StrokeThickness="10" Width="200" Height="200" Canvas.Left="81" Canvas.Top="66" Panel.ZIndex="3"></Rectangle>
+            <Rectangle Fill="Blue" Stroke="black" StrokeThickness="10" Width="200" Height="200" Canvas.Left="38" Canvas.Top="35"></Rectangle>
+
+
+            <!-- hooman -->
+            <Ellipse Height="100" Canvas.Left="615" Stroke="Black" Canvas.Top="44" Width="100">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/223nR_5f.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <Line StrokeThickness="4" Stroke="black" X1="200" Y1="-100" X2="200" Y2="-200" Canvas.Left="470" Canvas.Bottom="90" ></Line>
+            <Line StrokeThickness="4" Stroke="black" X1="50" Y1="-100" X2="100" Y2="-200" Canvas.Left="620" Canvas.Bottom="150"></Line>
+            <Line StrokeThickness="4" Stroke="black" X1="50" Y1="150" X2="100" Y2="100" Canvas.Left="570" Canvas.Bottom="210"></Line>
+            <Line StrokeThickness="4" Stroke="black" X1="50" Y1="150" X2="100" Y2="100" Canvas.Left="570" Canvas.Bottom="140"></Line>
+            <Line StrokeThickness="4" Stroke="black" X1="50" Y1="150" X2="100" Y2="200" Canvas.Left="620" Canvas.Bottom="140"></Line>
+
+            <!-- Sims -->
+            <Path Stroke="#FF103A10" StrokeThickness="4" Data="M 8,48 L 56,48 32,12" Canvas.Left="373.1" Canvas.Top="83.02" Height="134" Width="176" Stretch="Fill">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF60FF53" Offset="1"/>
+                        <GradientStop Color="#FF448E3E" Offset="1"/>
+                        <GradientStop Color="#FF071206" Offset="0.347"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Path Stroke="#FF103A10" StrokeThickness="4" Data="M 8,48 L 56,48 32,64" Canvas.Left="373.1" Canvas.Top="222.02" Height="134" Width="176" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFD6FFC8" Offset="1"/>
+                        <GradientStop Color="#FFB3D6A8" Offset="0.84"/>
+                        <GradientStop Color="#FEC7F7B8" Offset="0.37"/>
+                        <GradientStop Color="#FE5FAF45" Offset="0.113"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+
+        
+    </Grid>
+</Window>
